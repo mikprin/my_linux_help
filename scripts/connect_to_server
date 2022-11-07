@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+xhost +
+ssh solovyanov_m@ncs-design.mipt.ru  -X -Y

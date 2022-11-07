@@ -1,0 +1,4 @@
+
+
+# Limit power to 140W
+sudo nvidia-smi -i 0 -pl $1

@@ -1,0 +1,8 @@
+[/]
+close=['<Super>w']
+maximize=['<Primary><Super>Up']
+maximize-horizontally=@as []
+minimize=['<Super>z']
+show-desktop=['<Super>g']
+switch-to-workspace-down=['<Super>Down']
+switch-to-workspace-up=['<Super>Up']

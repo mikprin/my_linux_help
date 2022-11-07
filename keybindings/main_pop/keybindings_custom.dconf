@@ -1,0 +1,29 @@
+[custom0]
+binding='<Super>f'
+command='nemo'
+name='nemo '
+
+[custom1]
+binding='<Primary><Shift>s'
+command='gnome-screenshot -a'
+name='local-screenshot'
+
+[custom2]
+binding='<Alt>q'
+command='systemctl suspend'
+name='systemctl suspend'
+
+[custom3]
+binding='<Alt>b'
+command='brave-browser-beta'
+name='brave-browser-beta'
+
+[custom4]
+binding='<Alt>n'
+command='normilize.sh'
+name='normilize.sh'
+
+[custom5]
+binding='<Alt>h'
+command='hi-scale.sh'
+name='hi-scale.sh'

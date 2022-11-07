@@ -1,0 +1,19 @@
+You can do that for your entire script by using something like that at the beginning of your script :
+
+#!/usr/bin/env bash
+
+test x$1 = x$'\x00' && shift || { set -o pipefail ; ( exec 2>&1 ; $0 $'\x00' "$@" ) | tee mylogfile ; exit $? ; }
+
+# do whaetever you want
+
+This redirect both stderr and stdout outputs to the file called mylogfile and let everything goes to stdout at the same time.
+
+It is used some stupid tricks :
+
+    use exec without command to setup redirections,
+    use tee to duplicates outputs,
+    restart the script with the wanted redirections,
+    use a special first parameter (a simple NUL character specified by the $'string' special bash notation) to specify that the script is restarted (no equivalent parameter may be used by your original work),
+    try to preserve the original exit status when restarting the script using the pipefail option.
+
+Ugly but useful for me in certain situations.

@@ -1,0 +1,4 @@
+yay -Syyu --overwrite '*'
+
+
+pamac update -a

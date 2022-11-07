@@ -1,0 +1,13 @@
+
+iperf -c $IP #On client
+iperf -s # on server
+
+
+
+ports: https://www.journaldev.com/34113/opening-a-port-on-linux
+
+## Simple chat
+ls | nc -l -p 4000 # 
+telnet 192.160.21.19 4000
+
+sudo iftop # TOP like network utility

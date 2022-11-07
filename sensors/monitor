@@ -1,0 +1,3 @@
+rocm-smi - GPU STAT
+
+watch -n -1 rocm-smi

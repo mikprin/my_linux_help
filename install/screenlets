@@ -1,0 +1,27 @@
+
+
+WARNING: Usually the method below is not recommended at all, but you can continue if you really want to get ScreenLets installed on your system.
+
+We need to add Ubuntu 16.04 LTS repositories to the system:
+
+cat << EOF | sudo tee /etc/apt/sources.list.d/xenial.list 
+deb http://archive.ubuntu.com/ubuntu xenial main universe multiverse restricted
+deb http://archive.ubuntu.com/ubuntu xenial-updates main universe multiverse restricted
+deb http://archive.ubuntu.com/ubuntu xenial-security main universe multiverse restricted
+EOF
+
+Then we need to install LibPNG 1.2 from linuxuprising PPA (as the regular deb-based method does not work):
+
+sudo add-apt-repository ppa:linuxuprising/libpng12
+sudo apt install libpng12-0
+
+Then we need to add ScreenLets PPA:
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv 94E58C34A8670E8C
+sudo add-apt-repository "deb http://ppa.launchpad.net/screenlets/ppa/ubuntu xenial main"
+
+And finally we will be allowed to install ScreenLets:
+
+sudo apt-get install screenlets-pack-all
+
+and enjoy.

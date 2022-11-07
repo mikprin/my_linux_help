@@ -1,0 +1,15 @@
+
+
+Use `nmcli dev wifi` command. It shows the transfer rate, the signal strength and the security as well.
+
+enter image description here
+
+
+
+ifconfig -- ip check
+Active Internet connections (only servers):
+
+
+
+netstat -tulpn
+(sudo pacman -S net-tools )

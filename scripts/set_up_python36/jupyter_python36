@@ -1,0 +1,11 @@
+sudo apt install virtualenv 
+
+virtualenv -p python3.6 py_36_env
+
+source py_36_env/bin/activate
+
+pip install ipykernel
+
+python -m ipykernel install --user --name=py_36_env
+
+jupyter notebook

@@ -1,0 +1,1000 @@
+ls
+ln -s work_shell/ /home/share/mik/
+cd /home/share/mik/
+ls
+cd ~/work_shell/
+ls -e
+ls -l
+cd ..
+ls -l
+chmod 777 work_shell/
+ln -s work_shell/ /home/share/mik/
+ln -s work_shell /home/share/mik/
+cat work_shell/
+ln -s pvsUI_ipvs.log /home/share/mik/
+man ln
+ln -s /home/solovyanov_m/work_shell /home/share/mik/
+ls -l
+cd work_shell/
+ls
+ls -l
+cd ..
+ls
+ls -l
+cd work_shell/
+ls
+ls -l
+cd ..
+ls
+cp -R work_shell /home/share/mik/
+ls
+cd ~/compiler_export/
+ls -a
+cd ..
+ls
+cd fram_compiler/
+ls
+ls -a
+git pull
+ls
+cp ./fram_compiler/gds_files/fram_sample.gds ~/../share/mik/
+cat /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/qrc/
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/qrc/
+ls
+_oa/physical/qrc/
+top
+ls -a
+ls ./../share/mik/
+cd work_shell/
+ls
+. .bashrc 
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+cp pvtech.lib pvtechQRC.lib 
+gedit pvtechQRC.lib 
+cd ${DKHCMOS10LP}/physical/qrc
+ls
+cd ~/work_shell/
+less sense_amp.sp 
+lscpu
+top
+powerpff
+poweroff
+cd /home/share/fplo_calc/
+cd anatase/
+cd 126.053/
+ls
+gedit csv.py
+bg
+cd ..
+ls
+ls -l
+ls
+cd anatase/126.053/
+ls
+cp csv.py ../1*
+cp -r csv.py ../1*
+ls
+cd ../130.076/
+ls
+cd ..
+ls
+cd 126.053/
+ls
+cd 
+ls
+cd /home/share/fplo_calc/anatase/126.053/
+ls
+python3 csv.py
+python csv.py
+subl +dos.total
+cd ..
+cd 130.076/
+cat +dos.total
+ls
+cp ../126.053/csv.py .
+ls
+python csv.py saSSSSAS
+python csv.py
+cat +dos.total
+subl +dos.total
+ls
+gedit +dos.total
+ls -l
+nano +dos.total
+subl +dos.total
+nano csv.py 
+wc -l +dos.total
+ls
+python csv.py 
+cat dos.out 
+less dos.out 
+cp csv.py ../131.417/
+cd ../131.417/
+less +dos.total
+ls
+cat +dos.total
+less +dos.total
+subl +dos.total
+ls
+python csv.py 
+cat dos.out 
+ls ../132.758/
+cp csv.py ../1*
+man cp
+cp -l csv.py ../1*
+cp csv.py ../127.394/
+cp csv.py ../128.735/
+cp csv.py ../132.758/
+cp csv.py ../134.099/
+cp csv.py ../135.440/
+cp csv.py ../128.735/
+cp csv.py ../127.394/
+ls
+cd ../132.758/
+ls
+subl +dos.total
+python csv.py 
+ls
+cd ..
+ls
+cd 134.099/
+python csv.py 
+cd ../135.440/
+python csv.py 
+subl +dos.total
+python csv.py 
+less dos.out 
+less +dos.total
+cp +dos.total dos.total
+less dos.total
+less dos.out 
+less dos.total
+less dos.out 
+subl dos.total 
+gedit csv.py 
+python csv.py 
+gedit csv.py 
+python csv.py 
+less dos.out 
+python csv.py 
+gedit csv.py 
+bg
+python csv.py 
+less dos.out 
+ls
+cp csv.py ../126.053/
+cp csv.py ../127.394/
+cp csv.py ../128.735/
+cp csv.py ../131.417/
+cp csv.py ../132.758/
+cp csv.py ../135.440/
+cp csv.py ../134.440/
+ls
+cp csv.py ../134.099/
+cd ../134.099/
+ls
+cat +dos.total
+'
+'
+python csv.py 
+subl +dos.total
+python csv.py 
+cd ../132.758/
+ls
+subl +dos.total
+python csv.py
+less dos.out 
+cd ../130.076/
+ls
+less dos.out 
+cd ../126.053/
+ls
+cat +dos.total
+ls
+cat csv.py 
+python csv.py 
+cat ../135.440/csv.py 
+cat csv.py 
+subl +dos.total
+python csv.py 
+cd ..
+cd 127.394/
+subl +dos.total
+python csv.py 
+cd ../128.735/+tmp/
+cd ..
+ls
+subl +dos.total
+python csv.py 
+cd ..
+ls
+cd 130.076/
+ls
+less dos.out 
+cat csv.py 
+cp ../126.053/csv.py .
+python csv.py 
+ls
+cd ../131.417/
+ls
+``
+ls
+less dos.out 
+python csv.py 
+cd ..
+cd 132.758/
+ls
+less dos.out 
+cd ../134.099/
+ls
+less dos.out 
+cd ../135.440/
+less dos.out 
+tail dos.out 
+subl dos.out 
+gedit csv.py 
+python csv.py 
+gedit csv.py 
+python csv.py 
+cp csv.py ../126.053/
+cp csv.py ../127.394/
+cp csv.py ../128.735/
+cp csv.py ../131.417/
+cp csv.py ../132.758/
+cp csv.py ../134.099/
+cp csv.py ../135.440/
+cd ../126.053/
+python csv.py 
+cd ../127.394/
+python csv.py 
+cd ../128.735/
+python csv.py 
+cd ../130.076/
+python csv.py 
+cd ../131.417/
+python csv.py 
+cd ../132.758/
+python csv.py 
+cd ../134.099/
+python csv.py 
+cd ../135.440/
+cd ..
+ls
+cd ..
+ls
+cd rutile/
+ls
+cd 58.36/
+subl +dos.total
+cp ../../anatase/126.053/csv.py .
+ls
+gedit csv.py 
+ls
+cd 58.36/
+cp ../../anatase/127.394/csv.py .
+ls
+gedit csv.py 
+python csv.py 
+less dos.out 
+ls
+cp -R  csv.py ../5*
+cp -R  csv.py ../6*
+cd ../58.98/
+python csv.py 
+ls
+\cd ..
+ls
+cd 60.
+cd 60.22/
+ls
+cd ..
+cp 58.36/csv.py ./6*
+cp -R 58.36/csv.py ./6*
+cd 62.7/
+ls
+cd ..
+cp -R 62.7/csv.py ./5*
+cd 62.7/
+python csv.py 
+cd ../61.46/
+cp ../62.7/csv.py .
+python csv.py 
+cd ../60.84/
+cp ../62.7/csv.py .
+python csv.py 
+cd ../60.22/
+cp ../62.7/csv.py .
+python csv.py 
+ls
+cd ../59.60/
+ls
+python csv.py 
+cd ../58.98/
+ls
+cp ../62.7/csv.py .
+python csv.py 
+cd ../58.36/
+ls
+less dos.out 
+cd /home/share/fplo_calc/anatase/126.053/
+less dos.out 
+cat csv.py 
+python csv.py 
+cd ../130.076/
+ls
+less dos.out 
+gedit csv.py 
+python csv.py 
+ps
+pwd
+ps
+cd /home/share/fplo_calc/rutile/62.08/
+ls
+cp ../62.7/csv.py .
+python csv.py 
+ls
+cd script/
+pwd
+cd ../work_shell/
+ls
+pwd
+pwd sense_amp.gds 
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+pwd
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+�pw
+pwd
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+ls
+cd logs/
+cat q 
+cd work_shell/
+. .bashrc 
+ls
+pwd
+cd ..
+ls
+cd logs/
+s
+ls
+gedit q
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+ls
+cp ~/fram_sample.gds .
+rm ~/fram_sample.gds 
+ls
+rm panic.log.ncs-design.mipt.ru.*
+mv fram_sample.gds ./work_shell/
+cd work_shell/
+. .bashrc 
+top
+ды
+ls
+cat pvtech.lib 
+cat pvtechQRC.lib.lib 
+cat pvtechQRC.lib
+ls
+с�cat fram_sample_QRC.sp 
+�cat fram_sample_QRC.sp 
+cat fram_sample_QRC.sp 
+тф�nautilus
+nautilus . &
+pwd
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .bashrc 
+cp ../fram_sample.gds .
+ls
+cd lvsRunDirPVS/
+ls
+cd cell_name/
+ls
+cat TOP.spi
+nautilus . &
+зцв
+pwd
+pvs -h
+man pvs
+cd work_shell/
+. .bashrc 
+cd work_shell/
+. .ba
+. .bashrc 
+pvs
+pvs -h
+whereis pvs
+whereis virtuoso
+cd /home/toolkit/cadence/installs/PVS151/bin/pvs
+cd /home/toolkit/cadence/installs/PVS151/bin/
+ды
+ls
+cd ..
+ls
+evince PVS_ReleaseInfo~15.13.000.pdf 
+ls
+pwd
+nautilus . *
+nautilus . ?
+whereis pvs
+/home/toolkit/cadence/installs/PVS151/bin/pvs -h
+ды
+ls
+ls doc/
+ls doc/PVS/
+cat ./doc/PVS/PVS.tgf 
+less cat ./doc/PVS/PVS.tgf 
+nautilus . &
+ls -R
+ls
+ls doc/ -R
+ls doc/ -R | grep ".pdf"
+find -h
+man find
+cd doc/cdsdoc/
+ls
+cd ../pvsuser/
+ls
+evince pvsuser.pdf 
+pwd
+whereis pvs
+cd /home/toolkit/cadence/installs/PVS151
+ls
+ls bin/
+./bin/pvs -h
+cd work_shell/
+ls
+cd LVS/
+ls
+cd LVS1/
+ls
+cd ../..
+ls
+ls  drcRunDirPVS/
+ls -R  drcRunDirPVS/
+whereis pvs
+cd drcRunDirPVS/cell_name/
+ls
+cd TOP.drc_errors.ascii.pvstdb/
+ls
+cd ..
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/
+ls
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/
+ls
+cat hcmos10lp_lvsqrc.cfg 
+cd work_shell/
+. .bashrc 
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/
+ls
+cat hcmos10lp.lvs_preset 
+cd work_shell/
+ls -R | grep "pvsercctl"
+ls -R 
+ls -R | grep "pvsercctl"
+ls -R | grep "pvslvsctl"
+cd drcRunDirPVS/
+ды
+ls
+cd cell_name/
+ls
+cat pvslvsctl
+cat pvsdrcctl 
+cd ../../lvsRunDirPVS/
+ls
+cd cell_name/
+ls
+cat pvslvsctl 
+сцв
+cwd
+ls
+cat ./../../pvtech.lib 
+pwd
+mkdir ../../lvs_terminal
+cp pvslvsctl ../../lvs_terminal/
+cd pvslvsctl ../../lvs_terminal/
+cd pvslvsctl ../../
+ls
+cd ../../
+ls
+cd lvs_terminal/
+ls
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/
+ls
+cat techRuleSets 
+cat pvtech.lib 
+cd work_shell/
+. .bashrc 
+\
+ls
+cd lvs_terminal/
+ls
+cat pvslvsctl 
+whereis pvs
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/pvtech.lib
+ls
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/pvtech.lib > lvs.log
+ls
+less lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/techRuleSets > lvs.log
+ls
+less lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/hcmos10lp.lvs_preset > lvs.log
+less lvs.log 
+cd ..
+sl
+ls
+ls lvs
+ls lvs_terminal/
+cat pvtech.lib
+ls
+cd lvs_terminal/
+ls
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+cd ..
+ls
+. .bashrc 
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/cadence/cmos090_oa
+ls
+cd ${DKHCMOS10LP}/physical/pvs
+cd ${DKHCMOS10LP}/physical/
+cd ~/work_shell/
+gedit .bashrc 
+. .bashrc 
+cd ${DKHCMOS10LP}/physical/
+ls
+cd pvs/
+ls
+cat pvtech.lib 
+cat techRuleSets 
+cd ..
+ls
+cd calibre/
+ls
+ls -l
+ls -l -h -a
+less calibre.lvs 
+pwd
+ls
+pwd
+сls
+ls
+cd ~/work_shell/
+ls
+gedit .bashrc 
+bg
+cd ../PVS/LVS/
+ls
+cat pvsuilvs.log 
+cd
+ls
+cd ..
+ls
+cd solovyanov_m/PVS/LVS/
+ls
+cd ../../work_shell/lvs_terminal/
+ls
+cat lvs.log 
+cat pvslvsctl | grep "DKITROOT"
+cd ..
+. .bashrc 
+cd work_shell/
+. .bashrc 
+gedit .bashrc 
+. .bashrc 
+cd PVS/LVS/
+ls
+cat control 
+cat netlist 
+ls
+less pvslvsctl 
+cat pvsuilvs.log 
+ls
+less pvsuilvs.log 
+ls -l -h
+cat pvsuilvs.log | grep "ruleset"
+cat pvsuilvs.log | grep "rule"
+ls
+ls -a
+ls -a -h
+ls -a -l
+less .config.rul 
+less .technology.rul 
+cat ~/.bash_history  | grep "pvs"
+cat ~/.bash_history  | grep "pvs -lvs"
+cat ~/.bash_history  | grep "pvs-lvs"
+cat ~/.bash_history  | grep "-lvs"
+cat ~/.bash_history  | grep "lvs"
+ls
+top
+cd ../
+ls
+ls -l -a
+ls -l -a -h
+ls
+cd share/
+ls
+cd CurrentMirror1/
+ls
+cd ..
+э
+cd ~
+cat .bash
+cd work_shell/
+cat .bashrc 
+les .bashrc 
+less .bashrc 
+cat .bashrc | grep "DK"
+. .bashrc 
+�cd /home/dk/Mikron/HCMOS10_LP/
+cd /home/dk/Mikron/HCMOS10_LP/
+ls
+cd work_shell/
+. .bashrc 
+cd lvs_terminal/
+ls
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -source_top_cell  /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+сфcat ./pvslvsctl 
+сcat ./pvslvsctl 
+cat ./pvslvsctl 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -source_top_cell TOP /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+cat pvslvsctl 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -source_top_cell /home/solovyanov_m/PVS/LVS/driver_3u.gds /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -source_top_cell driver_3u /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -top_cell driver_3u /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+ls
+ls -R
+cd work_shell/
+. .bashrc 
+virtuoso &
+cd ../PVS/LVS/
+ls
+cat pvsls
+cat pvslvsctl 
+cat lay_cellMap.txt 
+cp pvslvsctl ~/work_shell/lvs_terminal/
+pwd
+whereis pvs
+cd /home/toolkit/cadence/installs/PVS151/bin/pvs
+cd /home/toolkit/cadence/installs/PVS151/
+ls
+cd doc/
+ls
+cd qvkpns/
+ls
+pwd
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/pvs/
+ls
+pwd
+ls
+ls
+cd /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/
+ls
+cat calibrelvs 
+ls
+pwd
+cd work_shell/
+. .bashrc 
+cd lvs_terminal/
+cd work_shell/
+. .bashrc 
+cd lvs_terminal/
+ls
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+cat pvslvsctl 
+less lvs.log 
+cat pvslvsctl | grep "DKITROOT"
+cat /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs | grep "DKITROOT"
+cd $DKITROOT
+;s
+ls
+cd $DKITROOT
+cd work_shell/lvs_terminal/
+ls
+cat driver_3u.sum 
+ls
+cat edbToEcdb.log 
+ls
+ls svdb/
+ls -a svdb/
+ls -a REPORTDB/
+ls
+cat driver_3u.rep 
+ls
+cat pvs_file.index 
+ls
+cd work_shell/
+cd lvs_terminal/
+pwd
+cd work_shell/
+ls
+cd lvs_terminal/
+ls
+less lvs.log 
+man less
+less lvs.log -z
+less -z lvs.log 
+less lvs.log 
+man less
+less lvs.log 
+ls
+ls REPORTDB/
+cd REPORTDB/
+cat rule.id 
+cat cell.id 
+ls
+cat cellrule.own 
+cat cellrule.idx 
+cd ..
+ls
+ls svdb/
+cd svdb/
+cat driver_3u.
+cat driver_3u.m
+cat driver_3u.gds.map 
+cat driver_3u.ports 
+cd ..
+ls
+cat driver_3u.lmap
+/home/toolkit/cadence/installs/PVS151/bin/pvs -h
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl -spice netlist.sp /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+less lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+cd ..
+. .bashrc 
+cd lvs_terminal/
+/home/toolkit/cadence/installs/PVS151/bin/pvs -lvs -control pvslvsctl -spice netlist.sp /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+
+tail ~/.bash_history 
+man tail
+tail --lines=200 ~/.bash_history 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -source_top_cell driver_3u /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+tail --lines=200 lvs.log 
+tail --lines=200 ~/.bash_history 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -top_cell driver_3u /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+tail --lines=200 lvs.log 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -top_cell driver_3u -spice ./netlist.sp /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+tail --lines=200 lvs.log 
+ls
+cat netlist.sp 
+/home/toolkit/cadence/installs/PVS151/bin/pvs -h
+ls
+cd work_shell/lvs_terminal/
+less netlist.sp 
+q
+qrc
+ls
+dattte
+date
+дысзг
+lscpu
+top
+cd work_shell/
+. .bashrc 
+virtuoso  &
+cd work_shell/
+. .bashrc 
+virt
+virtuoso &
+cd ~/..
+ls
+ls -l -h
+ls
+rm panic.log.ncs-design.mipt.ru.24090 
+cd ..
+ls -l -h
+date
+lscpu
+subl
+mkdir python
+nautilus . &
+cd python/
+gedit 1.py
+python 1.py 
+python3 1.py 
+python 1.py 
+pip instal --user numpy
+pip --user instal  numpy
+pip instal --user  numpy
+pip3 instal --user  numpy
+pip3 install --user  numpy
+pip install --user  numpy
+cd python/
+ls
+cd .
+cd ..
+ls
+cd python/
+ls
+pip install --user numpy
+pip3 install --user numpy
+pip3 install --user matplotlib
+ls
+kernel --version
+python3 1.py 
+cat ./.bash_profile
+ls
+cat copy_to_server 
+cd ..
+ls
+clear
+ls
+cd share/
+ls
+ls memories/
+cd memories/
+tar -xvzf tsn65lpdpsram_2048x16_mux32.tar.gz 
+ls
+cls
+ls -l
+tar -xvzf tsn65lpdpsram_2048x16_mux32.tar.gz 
+ls
+cd tsn65lpdpsram_2048x16_mux32/
+ls
+cat LEF/tsn65lpdpsram_2048x16_mux32.lef 
+less VERILOG/tsn65lpdpsram_2048x16_mux32_ff1p32v0c.v 
+cd ..
+ls
+cd share/
+ls
+cd ../templates/
+ls
+cd hcmos10_template/
+ls
+cd ../../dk/Mikron/mikron\ ftp/
+ls
+cd CMOS_90/
+ls
+cd HCMOS10_LP_7M_2.5V/
+ls
+cd PDK/archive/
+ls
+cd ~/example/
+ls
+cd CLOCK90LPHVT_v1.1/
+ls
+klayout gds/CLOCK90LPHVT.gds 
+ls
+cd doc/
+ls
+evince CLOCK90LPHVT_1.pdf
+evince CLOCK90LPHVT_1.00V_ds.pdf 
+
+pwd
+cat ~/copy_from_server 
+cd work_shell/
+. .bashrc 
+ls
+virtuoso &
+ls
+cat .cdsenv 
+cat .cdsinit 
+cd work_shell/
+. .bashrc 
+virtuoso &
+poweroff
+poweroff -i
+cd work_shell/
+. .bashrc 
+virtuoso &
+pwd
+cd work_shell/
+. .bashrc 
+virtuoso 
+cd work_shell/
+. .bashrc 
+virtuoso 
+bg
+cd work_shell/
+. .bashrc 
+cd work_shell/
+ls
+. .bashrc 
+virtuoso &
+ls
+mkdir gds_files
+cp *.gds gds_files/
+ls
+mv *.gds gds_files/
+ls
+pwd
+cd work_shell/
+. .bashrc 
+virtuoso &
+cd work_shell/
+. .bashrc 
+virtuoso &
+nautilus . &
+kdestroy --version
+kdestroy -version
+kdestroy -v
+a
+cls lsls
+cd work_shell/
+. .bashrc 
+virtuoso &
+python3 
+ls
+cd python/
+ls
+subl set.py
+gedit set.py
+ls
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py
+python3 set.py 
+gedit set.py &
+python3 set.py 
+lscpu 
+htop
+cd work_shell/
+ls
+cat sense_amp.sp 
+. .bashrc 
+virtuoso &
+ls fram_cells 
+cd fram_cells/
+cd fram_cells/sen
+ls
+cd wl
+cd work_shell/
+ls
+cat sense_amp.sp 
+. .bashrc 
+virtuoso &
+cat test1/netlist_2/netlist2 
+git -v
+git 
+git ---version
+git --version
+ls
+cd python/
+s
+ls
+git clone git@gitlab.com:mipt-ncs/nvram-gen.git
+ls

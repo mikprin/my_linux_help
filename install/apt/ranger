@@ -1,0 +1,8 @@
+https://github.com/ranger/ranger.git
+
+cd ranger
+sudo make install
+ranger
+ranger --copy-config=all
+
+cd ~/.config/ranger

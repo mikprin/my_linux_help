@@ -1,0 +1,2 @@
+https://andreyex.ru/operacionnaya-sistema-linux/kak-ispolzovat-sshfs-dlya-montirovaniya-udalennyh-katalogov-cherez-ssh/
+sudo sshfs solovyanov_m@ncs-design.mipt.ru:/home/solovyanov_m /mnt/ncs_server -o allow_other

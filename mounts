@@ -1,0 +1,1 @@
+lsof +D folder  #  which stands for list open files. That will recurse through the filesystem under /path, so beware doing it on large directory trees.

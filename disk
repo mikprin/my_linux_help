@@ -1,0 +1,44 @@
+df -h - SPACE
+
+
+
+#To list all block devices, run:
+
+lsblk 
+
+sudo du -sh /var
+
+1. fdisk
+#Fdisk is the most commonly used command to check the partitions on a disk. The fdisk command can display the partitions and details like file system type. However it does not report the size of each partitions.
+
+ncdu #- утилита для поиска по размерам!
+
+
+#1. Using df Command get File syst type
+
+df  #command reports file system disk space usage, to include the file system type on a particular disk partition, use the -T flag as below:
+
+$ df -Th
+OR
+$ df -Th | grep "^/dev"
+
+#get UUID:
+sudo blkid
+
+
+"Swap not available" - I must manually "swapon" after every reboot
+
+You have no configuration for swap in /etc/fstab. Add following line to that file:
+
+UUID=<uuid> none   swap    sw    0       0   
+
+You have to replace <uuid> with the uuid of your swap partition. To do that, run sudo blkid
+
+$ sudo blkid
+/dev/sda1: LABEL="System Reserved" UUID="88A0D0A1A0D09752" TYPE="ntfs" 
+/dev/sda2: UUID="0620D9F920D9EFA3" TYPE="ntfs" 
+/dev/sda5: UUID="c282b418-2045-4852-8789-88a44360a0bb" TYPE="ext4" 
+/dev/sda6: UUID="f99c6a0c-790a-45ca-a1a9-8874f5a2999b" TYPE="ext4" 
+/dev/sda7: UUID="4cc2e909-ebd1-4c72-abee-aa32035bf330" TYPE="swap"
+
+This is a list of my partitions, and as you see, /dev/sda7 is my swap partition. So you can copy the value of UUID corresponding to your swap, omitting the quotes, and use it for your fstab file.

@@ -1,0 +1,3 @@
+ls /sys/firmware/efi/efivars # Check if it us UEFI system!
+
+

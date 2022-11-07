@@ -1,0 +1,22 @@
+git clone http://github.com/ethereum/go-ethereum
+cd go-ethereum
+git checkout gpu_miner
+make geth
+cd build/bin
+./geth --rpc --autodag --minegpu 0
+
+
+git clone http://github.com/ethereum/go-ethereum
+cd go-ethereum
+git checkout gpu_miner
+make geth
+cd build/bin
+./geth --rpc --autodag --minegpu 0
+
+This is by far the easiest way to mine and stay up to date. Also works with benchmarking and multiple gpus. https://forum.ethereum.org/discussion/2493/try-out-the-new-go-gpu-miner-just-geth
+
+Even better to do:
+
+nohup ./geth --rpc --autodag --minegpu 0 &
+
+Voila. Runs in the background and doesn't get the hangup signal if the terminal that spawned it closes so you can always just "./geth attach" and monitor your hashrate with miner.hashrate.

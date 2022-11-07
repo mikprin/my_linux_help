@@ -1,0 +1,8 @@
+/etc/mtab - all mount history
+
+
+==> We have switched back to QGnomePlatform for GNOME 42.
+  qt5ct and qt6ct (Qt Configuration Utilities) may be marked as orphans.
+  If you want use QGnomePlatform with the Adwaita Qt style,
+  you'll need remove or comment the QT_QPA_PLATFORMTHEME variable
+  in /etc/environment.

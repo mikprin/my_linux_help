@@ -1,0 +1,39 @@
+# DETACH
+
+After typing ‘screen’ command, you will be in a new screen session, within this session you can create new windows, traverse between windows, lock the screen, and do many more stuff which you can do on a normal terminal.
+
+$ screen
+
+Detaching a Screen
+
+Just when you want to log out of the remote session, but you want to keep the session you created on that machine alive, then just what you need to do is detach the screen from the terminal so that it has no controlling terminal left. After doing this, you can safely logout.
+
+To detach a screen from the remote terminal, just press “Ctrl+a” immediately followed by “d” and you will be back to the terminal seeing the message that the Screen is detached. Now you can safely logout and your session will be left alive.
+
+If you want to Resume a detached screen session which you left before logging out, just re-login to remote terminal again and type “screen -r” in case if only one screen is opened, and if multiple screen sessions are opened run “screen -r <pid.tty.host>”.
+
+$ screen -r
+$ screen -r <pid.tty.host>
+
+
+
+So, what can I do?
+
+I assume you’re already connected through SSH, right? If so, you’ll have to get the current cookie for the current SSH session.
+
+$ echo $DISPLAY
+localhost:13.0
+$ xauth list $DISPLAY
+melttower/unix:13  MIT-MAGIC-COOKIE-1  9020db1e84384b27b45dff3e63c0b6af
+
+So our current cookie for this session is:
+
+melttower/unix:13 MIT-MAGIC-COOKIE-1 9020db1e84384b27b45dff3e63c0b6af
+
+Now you’ll need to add this cookie to the root user (or any user you want to forward X11 apps to):
+
+$ sudo xauth add melttower/unix:13  MIT-MAGIC-COOKIE-1  9020db1e84384b27b45dff3e63c0b6af
+
+After that, you should be able to run any X11 applications as sudo/su!
+
+mikhomeserver/unix:10  MIT-MAGIC-COOKIE-1  7cdf6404ce60fffa8ac3ac6476ce415f

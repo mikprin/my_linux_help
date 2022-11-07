@@ -1,0 +1,18 @@
+Find demo
+
+
+find . -type d  = найти все директории
+
+find . -type f = найти все папки
+
+find . -type f -name "folder_name" = найти все папки с именем folder_name
+
+find . -perm 777 = найти все файлы 
+
+
+find . -name "11" -exec "command target {} +"
+find . -name "11" -exec command target {} \; a
+
+just use:
+
+fzf 

@@ -1,0 +1,15 @@
+# deb cdrom:[Pop_OS 19.10 _Eoan Ermine_ - Release amd64 (20200131)]/ eoan main restricted
+deb-src http://us.archive.ubuntu.com/ubuntu/ eoan main restricted universe multiverse
+deb http://us.archive.ubuntu.com/ubuntu/ eoan-security main restricted universe multiverse
+deb-src http://us.archive.ubuntu.com/ubuntu/ eoan-security main restricted universe multiverse
+deb http://us.archive.ubuntu.com/ubuntu/ eoan-updates main restricted universe multiverse
+deb-src http://us.archive.ubuntu.com/ubuntu/ eoan-updates main restricted universe multiverse
+deb http://us.archive.ubuntu.com/ubuntu/ eoan-backports main restricted universe multiverse
+deb-src http://us.archive.ubuntu.com/ubuntu/ eoan-backports main restricted universe multiverse
+deb http://us.archive.ubuntu.com/ubuntu/ eoan main restricted universe multiverse
+deb http://apt.pop-os.org/proprietary eoan main
+# deb-src http://apt.pop-os.org/proprietary eoan main
+deb [trusted=yes] http://ppa.launchpad.net/qucs/qucs/ubuntu
+deb [trusted=yes] http://ppa.launchpad.net/qucs/qucs/ubuntu
+deb [trusted=yes] http://ppa.launchpad.net/beineri/opt-qt551-trusty/ubuntu
+deb [trusted=yes] http://ppa.launchpad.net/teejee2008/ppa/ubuntu

@@ -1,0 +1,60 @@
+IFS=$'\n'; for x in $(sudo -u username gsettings list-recursively org.gnome.settings-daemon.plugins.power); do eval "sudo -u gdm dbus-launch gsettings set $x"; done; unset IFS
+
+working NOT
+ sudo -u gdm dbus-launch gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
+
+
+
+
+
+
+
+
+
++++++++++++ NOT WORKING ++++++++++++++++++
+
+
+That's because of the idle-delay setting. To change it you'll have to alter the corresponding dconf key (and do that as the gdm user):
+
+    switch to a VT (e.g. Ctrl+Alt+F3), login as root and run:
+
+    su - gdm -s /bin/sh
+
+    to switch user to gdm.
+
+    then run:
+
+    export $(dbus-launch)
+
+    and set idle delay to 0 (which translates to never):
+
+    GSETTINGS_BACKEND=dconf gsettings set org.gnome.desktop.session idle-delay 0
+
+    run exit or hit Ctrl+D to return to root account.
+
+    reboot your machine or restart the display manager:
+
+    systemctl restart gdm
+
+
+
+-----------------
+
+from https://unix.stackexchange.com/questions/437501/prevent-desktop-arch-linux-box-from-sleeping
+
+
+
+I asked about this on the arch linux IRC channel, and had the following response:
+
+<Namarrgon> smason: it's a bug in gdm
+<Namarrgon> when you disabl automatic suspend in gnome it doesn't affect gdm itself
+
+based on this, I found a relevant looking exchange: https://unix.stackexchange.com/a/361275/90376
+
+which I altered to the following commands:
+
+sudo machinectl shell gdm@ /bin/bash
+export GSETTINGS_BACKEND=dconf
+gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-timeout 0
+
+This has now been running for a couple of days and my cron and other background jobs remain running over night.

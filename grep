@@ -1,0 +1,4 @@
+
+color pattern in file 
+
+egrep --color 'pattern|$' file

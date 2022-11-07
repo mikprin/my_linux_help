@@ -1,0 +1,3 @@
+qrdecode -- code QR codes
+
+zbar -decode QR

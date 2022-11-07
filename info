@@ -1,0 +1,25 @@
+man # то же самое что и команда --help (-h) но куда более развернутое ( доступно не для всего)
+cd директория #Change directory
+ls директория # list source (-la)
+cp -r file1 file2 #Копировать файлы и дериктории (с заменой)
+rm (-r) #удалять файлы и дериктории
+mv # перенести или переименовать файл
+cat файл # Прочитать файл в терминал
+less файл # То же самое, но не в терминал а в отдельный шелл (выйти q)
+grep smth # (-winr -A 2 -B 2 ) итеративный поиск внутри файлов посмотри отдельно как оно работает. Оч полезно
+find # не самый привычный, но удобный тул поиска по всему что хочешь если уметь им пользоваться. Может найти что и как угодно.
+fzf # Скачиваемый более удобный тул поиска по имени
+ncdu # Тоже скачиваемый тул для поиска по размерам
+du (-sh) # Summarize disk usage of the set of FILEs, recursively for directories.
+df # Usage: df [OPTION]... [FILE]...  Show information about the file system on which each FILE resides, or all file systems by default.
+lsblk # List information about block devices.
+sudo fdisk -l # Display or manipulate a disk partition table.
+gparted # графический аналог двух команд выше, я юзал его при установке
+mount # Mount a filesystem
+dd # disk destroyer (шутка) Copy a file, converting and formatting according to the operands. Использоать осторожно так как можно затереть систему. Можно просто юзать какие то простые аналоги типа RUFUS или чего то такого
+ssh # доступ к удаленной рабочей машине
+scp # то же что и cp только для обмена данными между этой и удаленной машиной
+git # утилита работы с GIT нужен отдельный урок по ней.
+evince [OPTION…] [FILE…] GNOME Document Viewer. Для PDF
+eog # смотреть фотки
+	

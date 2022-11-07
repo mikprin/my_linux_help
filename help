@@ -1,0 +1,21 @@
+apt-file search libQtCore.so.4
+
+whatis ~
+whereis ~
+
+search 4 file
+
+
+pushd /direc
+
+popd
+
+
+watch (1)            - execute a program periodically, showing output fullscreen
+
+
+
+pv (watch how to use it)
+
+psf -t time -t 1 -i /path/to/psf/simfile -o output.txt
+

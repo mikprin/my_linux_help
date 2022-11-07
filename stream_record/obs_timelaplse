@@ -1,0 +1,3 @@
+https://obsproject.com/forum/threads/obs-timelapse-recording.126959/
+
+ffmpeg -i "input.mkv" -filter:v "setpts=PTS/360" -an -r 60 timelapse.mkv

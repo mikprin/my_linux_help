@@ -1,0 +1,38 @@
+[/]
+close=['<Super>w']
+maximize=['<Primary><Super>Up']
+maximize-horizontally=@as []
+minimize=['<Super>z']
+show-desktop=['<Super>g']
+switch-to-workspace-down=['<Super>Down']
+switch-to-workspace-up=['<Super>Up']
+
+[custom0]
+binding='<Super>f'
+command='nemo'
+name='nemo '
+
+[custom1]
+binding='<Super>r'
+command='gnome-terminal -e ranger'
+name='ranger'
+
+[custom2]
+binding='<Primary><Shift>s'
+command='gnome-screenshot -a'
+name='local_screenshot'
+
+[custom3]
+binding='<Alt>m'
+command='telegram-desktop'
+name='telegram-desktop'
+
+[custom4]
+binding='<Alt>b'
+command='brave-browser-beta'
+name='BRAVEb'
+
+[custom5]
+binding='<Super>q'
+command='systemctl suspend'
+name='systemctl suspend'

@@ -1,0 +1,6 @@
+#Start history
+echo 'HISTFILE=$HOME/.bash_history' >> .bashrc
+
+
+# restart ssh
+sudo synoservicectl --restart sshd

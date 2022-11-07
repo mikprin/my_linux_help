@@ -1,0 +1,2 @@
+#!/bin/bash
+cat /tmp/.mount_Logic-dNiqlr/resources/linux/99-SaleaeLogic.rules | sudo tee /etc/udev/rules.d/99-SaleaeLogic.rules > /dev/null && echo "finished installing /etc/udev/rules.d/99-SaleaeLogic.rules"

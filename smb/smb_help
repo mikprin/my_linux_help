@@ -1,0 +1,28 @@
+sudo smbclient -U Efim -L 192.168.1.12
+mount -t cifs -o username=miksolo //192.168.1.12 /mnt/win_share
+
+
+File:
+
+user=USER
+password=****
+domain=192.168.1.12
+
+
+# To use file:
+mount.cifs //myserverhere.com/cifs_share /mnt/cifs_share \
+    -o user,uid=65001,rw,workgroup=DEV,credentials=/root/.cifs
+
+for fs_tab:
+//192.168.1.12/foto /mnt/win_share cifs uid=0,credentials=/home/miksolo/.smb,iocharset=utf8,vers=3.0,noperm,_netdev 0 0
+//192.160.21.33/share /mnt/nas cifs uid=0,credentials=/home/matvey/.smb/credentials,iocharset=utf8,vers=3.0,noperm 0 0
+
+https://www.redhat.com/sysadmin/samba-windows-linux
+
+
+to discover on windows https://github.com/christgau/wsdd
+
+
+ mount -t cifs -o umask=filePermissions,gid=$GID,uid=$UID,username=miksolo //10.0.0.1/Private /mnt/server_smb
+
+ mount -t cifs -o username=miksolo //10.0.0.1/Private /mnt/server_smb

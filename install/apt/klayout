@@ -1,0 +1,10 @@
+export LD_LIBRARY_PATH=/opt/klayout
+PATH=$PATH:/opt/klayout
+
+
+
+# To build klayout python packadge: do 
+sudo apt-get install libcurl-dev libcurl4-openssl-dev libcurl4-gnutls-dev
+
+sudo apt-get install libblas-dev libatlas-base-dev
+sudo apt install build-essential libssl-dev libffi-dev

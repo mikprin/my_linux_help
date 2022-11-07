@@ -1,0 +1,7 @@
+[200~Modifying my /etc/bluetooth/input.conf solved the problem.
+
+Type
+
+sudo nano /etc/bluetooth/input.conf
+
+and modify the IdleTimeout value (in minutes) - for me 30 minutes is fine but you can set it to 0 to deactivate turning off Bluetooth.~

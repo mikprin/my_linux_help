@@ -1,0 +1,3 @@
+#!/bin/sh
+
+scp -r  $1 solovyanov_m@ncs-design.mipt.ru:/home/solovyanov_m 

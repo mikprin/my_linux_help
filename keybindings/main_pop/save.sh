@@ -1,0 +1,2 @@
+dconf dump /org/gnome/desktop/wm/keybindings/ > /home/miksolo/bash/keybindings/main_pop/keybindings.dconf
+dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/> /home/miksolo/bash/keybindings/main_pop/keybindings_custom.dconf

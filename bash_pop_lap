@@ -1,0 +1,5 @@
+sudo mount -t ntfs /dev/sdb1 /media
+
+
+
+lsblk =  fdisk -l

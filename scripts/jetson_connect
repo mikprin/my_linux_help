@@ -1,0 +1,6 @@
+xhost +
+ssh dev@192.168.1.10  -X -Y
+
+#194.67.27.234
+
+#sshpass -p "787898" ssh -o StrictHostKeyChecking=no dev@192.168.1.10

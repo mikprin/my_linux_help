@@ -1,0 +1,13 @@
+
+# Installation
+For deb:
+sudo apt install cockpit
+
+For arch:
+sudo pacman -S cockpit
+
+
+# Handle. 
+
+host:9090
+

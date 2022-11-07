@@ -1,0 +1,3 @@
+#!/bin/bash
+sudo systemctl stop packagekit.service
+sudo systemctl disable packagekit.service

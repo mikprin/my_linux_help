@@ -1,0 +1,28 @@
+[custom0]
+binding='<Super>f'
+command='nemo'
+name='nemo '
+
+[custom1]
+binding='<Super>r'
+command='gnome-terminal -e ranger'
+name='ranger'
+
+[custom2]
+binding='<Primary><Shift>s'
+command='gnome-screenshot -a'
+name='local_screenshot'
+
+[custom3]
+binding='<Alt>m'
+command='telegram-desktop'
+name='telegram-desktop'
+
+[custom4]
+binding='<Alt>b'
+command='brave-browser-beta'
+name='BRAVEb'
+
+[custom5]
+command='systemctl suspend'
+name='systemctl suspend'

@@ -1,0 +1,15 @@
+memory specs
+
+
+
+
+
+OS: (cat /etc/os-release | grep "NAME")
+GPU: (lspci -nn | grep VGA or lshw -C display -numeric)
+Kernel version: (run uname -a)
+Mesa version: (glxinfo -B | grep "OpenGL version string")
+Xserver version (if applicable): (sudo X -version)
+Memory: sudo dmidecode --type 17
+
+Full specs:
+hardinfo # (https://github.com/lpereira/hardinfo)

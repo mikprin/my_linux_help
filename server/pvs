@@ -1,0 +1,6 @@
+
+
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -top_cell driver_3u -spice ./netlist.sp /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log
+
+
+/home/toolkit/cadence/installs/PVS151/bin/pvs -ext -control pvslvsctl -top_cell driver_3u -spice ./fram_sample.sp /home/dk/Mikron/HCMOS10_LP/PDK_v1.0_oa/physical/calibre/calibre.lvs > lvs.log

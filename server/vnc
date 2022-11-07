@@ -1,0 +1,6 @@
+One way to do it (if you want to access an open session remotely):
+
+    Install TigerVNC
+    Configure password by running vncpasswd in the console
+    Add the following command to the auto startup applications of you DE: x0vncserver -display :0 -PasswordFile /home/your_user_name/.vnc/passwd
+

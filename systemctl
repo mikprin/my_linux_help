@@ -1,0 +1,17 @@
+systemctl stop [servicename]
+systemctl disable [servicename]
+rm /etc/systemd/system/[servicename]
+rm /etc/systemd/system/[servicename] symlinks that might be related
+systemctl daemon-reload
+systemctl reset-failed
+
+
+The "proper" way to test if a service is running in a script
+
+systemctl has an is-active subcommand for this:
+
+systemctl is-active --quiet service
+
+will exit with status zero if service is active, non-zero otherwise, making it ideal for scripts:
+
+systemctl is-active --quiet service && echo Service is running

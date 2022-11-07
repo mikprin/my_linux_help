@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>How ZFS continues to be better than btrfs — Rudd-O.com</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/++theme++ruddocom/barceloneta-favicon.ico" />
+    <link rel="apple-touch-icon" href="/++theme++ruddocom/barceloneta-apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/++theme++ruddocom/barceloneta-apple-touch-icon-144x144-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/++theme++ruddocom/barceloneta-apple-touch-icon-114x114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/++theme++ruddocom/barceloneta-apple-touch-icon-72x72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/++theme++ruddocom/barceloneta-apple-touch-icon-57x57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" href="/++theme++ruddocom/barceloneta-apple-touch-icon-precomposed.png" />
+  <meta name="twitter:card" content="summary" /><meta property="og:site_name" content="Rudd-O.com" /><meta property="og:title" content="How ZFS continues to be better than btrfs" /><meta property="og:type" content="website" /><meta property="og:description" content="ZFS keeps winning over btrfs on many fronts.  Here's a short list that explains exactly how." /><meta property="og:url" content="https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs" /><meta property="og:image" content="https://rudd-o.com/@@site-logo/logo.png" /><meta property="og:image:type" content="image/png" /><meta name="description" content="ZFS keeps winning over btrfs on many fronts.  Here's a short list that explains exactly how." /><meta name="DC.description" content="ZFS keeps winning over btrfs on many fronts.  Here's a short list that explains exactly how." /><meta name="keywords" content="ZFS, btrfs" /><meta name="DC.subject" content="ZFS, btrfs" /><meta name="DC.creator" content="Rudd-O" /><meta name="DC.date.created" content="2013-06-26T03:17:23+00:00" /><meta name="DC.date.modified" content="2014-11-15T22:22:39+00:00" /><meta name="DC.type" content="News Item" /><meta name="DC.format" content="text/plain" /><meta name="DC.language" content="en" /><meta name="DC.date.valid_range" content="2012/03/29 - " /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Plone - http://plone.com" /><link rel="author" href="https://rudd-o.com/author/RuddO" title="Author information" /><link rel="canonical" href="https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs" /><link rel="search" href="https://rudd-o.com/@@search" title="Search this site" /><link rel="stylesheet" href="https://rudd-o.com/++plone++production/++unique++2021-01-26T00:10:36.369760/default.css" data-bundle="production" /><link rel="stylesheet" href="https://rudd-o.com//++theme++ruddocom/less/theme-compiled.css" data-bundle="diazo" /><script>PORTAL_URL = 'https://rudd-o.com';</script><script type="text/javascript" src="https://rudd-o.com/++plone++production/++unique++2021-01-26T00:10:36.369760/default.js" data-bundle="production"></script></head>
+  <body id="visual-portal-wrapper" class="frontend icons-on portaltype-news-item section-linux-and-free-software site-en subsection-ways-in-which-zfs-is-better-than-btrfs template-newsitem_view thumbs-on userrole-anonymous viewpermission-view" dir="ltr" data-base-url="https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs" data-view-url="https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs" data-portal-url="https://rudd-o.com" data-i18ncatalogurl="https://rudd-o.com/plonejsi18n" data-pat-pickadate="{&quot;selectYears&quot;: 200}"><section id="portal-toolbar">
+    </section><div class="outer-wrapper">
+      <header id="content-header">
+        <div class="container">
+          
+      <div id="portal-header">
+    <div id="portal-searchbox">
+
+    <form id="searchGadget_form" action="https://rudd-o.com/@@search" role="search" data-pat-livesearch="ajaxUrl:https://rudd-o.com/@@ajax-search" class="pat-livesearch">
+
+        <div class="LSBox">
+        <label class="hiddenStructure" for="searchGadget">Search Site</label>
+             
+        <div class="searchSection">
+            <input id="searchbox_currentfolder_only" class="noborder" type="checkbox" name="path" value="/Rudd-O.com/en/linux-and-free-software" />
+            <label for="searchbox_currentfolder_only" style="cursor: pointer">only in current section</label>
+        </div>
+             
+        <input name="SearchableText" type="text" size="18" id="searchGadget" title="Search Site" placeholder="Search Site" class="searchField" />
+
+        <input class="searchButton" type="submit" value="Search" />
+
+         </div>
+    </form>
+
+    <div id="portal-advanced-search" class="hiddenStructure">
+        <a href="https://rudd-o.com/@@search">Advanced Search…</a>
+    </div>
+
+</div>
+
+<a id="portal-logo" title="Rudd-O.com" href="https://rudd-o.com">
+    <img src="https://rudd-o.com/@@site-logo/logo.png" alt="Rudd-O.com" title="Rudd-O.com" /></a>
+
+<div id="portal-anontools">
+  <ul>
+    <li>
+      
+          <a title="Log in" href="https://rudd-o.com/login" id="personaltools-login">Log in</a>
+      
+    </li>
+  </ul>
+</div>
+
+
+
+</div>
+
+    
+          
+        </div>
+      </header>
+      <div id="mainnavigation-wrapper">
+        <div id="mainnavigation">
+
+  <nav class="plone-navbar pat-navigationmarker" id="portal-globalnav-wrapper">
+    <div class="container">
+      <div class="plone-navbar-header">
+        <button type="button" class="plone-navbar-toggle" data-toggle="collapse" data-target="#portal-globalnav-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="plone-collapse plone-navbar-collapse" id="portal-globalnav-collapse">
+        <ul class="plone-nav plone-navbar-nav" id="portal-globalnav">
+          <li class="index_html"><a href="https://rudd-o.com" class="state-None">Home</a></li><li class="linux-and-free-software"><a href="https://rudd-o.com/linux-and-free-software" class="state-published">Linux and free software</a></li><li class="monopolies-of-the-mind"><a href="https://rudd-o.com/monopolies-of-the-mind" class="state-published">Monopolies of the mind</a></li><li class="archives"><a href="https://rudd-o.com/archives" class="state-published">Archives</a></li><li class="site-news"><a href="https://rudd-o.com/site-news" class="state-published">Site news</a></li><li class="downloads"><a href="https://rudd-o.com/downloads" class="state-published">Downloads</a></li><li class="es"><a href="/es" class="state-published">Spanish edition</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+</div>
+      </div>
+      
+      <div id="above-content-wrapper">
+          <div id="viewlet-above-content"><nav id="portal-breadcrumbs" class="plone-breadcrumb">
+  <div class="container">
+    <span id="breadcrumbs-you-are-here" class="hiddenStructure">You are here:</span>
+    <ol aria-labelledby="breadcrumbs-you-are-here">
+      <li id="breadcrumbs-home">
+        <a href="https://rudd-o.com">Home</a>
+      </li>
+      <li id="breadcrumbs-1">
+        
+          <a href="https://rudd-o.com/linux-and-free-software">Linux and free software</a>
+          
+        
+      </li>
+      <li id="breadcrumbs-2">
+        
+          
+          <span id="breadcrumbs-current">How ZFS continues to be better than btrfs</span>
+        
+      </li>
+    </ol>
+  </div>
+</nav>
+</div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <aside id="global_statusmessage">
+      
+
+      <div>
+      </div>
+    </aside>
+        </div>
+        <main id="main-container" class="row row-offcanvas row-offcanvas-right" role="main">
+          
+
+    
+
+    <div class="col-xs-12 col-sm-12">
+      <!-- <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+      </p> -->
+      <div class="row">
+        <div class="col-xs-12 col-sm-12">
+          <article id="content">
+
+          
+
+          <header>
+            <div id="viewlet-above-content-title"><span id="social-tags-body" style="display: none" itemscope="" itemtype="http://schema.org/WebPage">
+  <span itemprop="name">How ZFS continues to be better than btrfs</span>
+  <span itemprop="description">ZFS keeps winning over btrfs on many fronts.  Here's a short list that explains exactly how.</span>
+  <span itemprop="url">https://rudd-o.com/linux-and-free-software/ways-in-which-zfs-is-better-than-btrfs</span>
+  <span itemprop="image">https://rudd-o.com/@@site-logo/logo.png</span>
+</span>
+
+
+</div>
+            
+              <h1 class="documentFirstHeading">How ZFS continues to be better than btrfs</h1>
+
+            
+            <div id="viewlet-below-content-title"><div class="documentByLine" id="plone-document-byline">
+  
+  
+    <span class="documentAuthor">
+      by <a href="https://rudd-o.com/author/RuddO">Rudd-O</a>
+         —
+    </span>
+  
+  
+
+  
+  <span class="documentPublished">
+    <span>published</span>
+    <span class="pat-moment" data-pat-moment="format:relative;">2012/03/29 02:25:00 GMT+0</span>,
+  </span>
+
+  <span class="documentModified">
+    <span>last modified</span>
+    <span class="pat-moment" data-pat-moment="format:relative;">2014-11-15T22:22:39+00:00</span>
+  </span>
+  
+
+  
+
+  
+
+  
+
+</div>
+
+</div>
+
+            
+              <div class="documentDescription description">ZFS keeps winning over btrfs on many fronts.  Here's a short list that explains exactly how.</div>
+
+            
+          </header>
+
+          <div id="viewlet-above-content-body"></div>
+          <div id="content-core">
+            
+
+  <div id="parent-fieldname-text" class=""><p>We keep hearing about the wonders of btrfs.  btrfs is algorithmically better, btrfs has features that ZFS does not have, btrfs is going to win over ZFS at some unspecified point in the future.</p>
+<p>The reality is that, <em>today</em>, ZFS is <em>way</em> better than btrfs in a number of areas, in very concrete ways that make using ZFS a joy and make using btrfs a pain, and make ZFS the only choice for many workloads.  Even in single-disk laptop or desktop configurations, ZFS has a number of advantages over btrfs that will make your life much easier.</p>
+<p>Here, I will examine in detail all the ways in which ZFS is better than btrfs.  Fundamentally, all of these advantages are practical consequences of user-centered design decisions that -- while technically possible to implement in btrfs -- were completely absent during the conception of btrfs.  We can only hope that, with a bit of luck, the btrfs developers will eventually fix these problems and produce a superior file system.</p>
+<p>For the record, everything I've discussed here is available for Linux, both as the <a href="http://github.com/zfsonlinux/">ZFS on Linux</a> project and the <a href="http://zfs-fuse.net">ZFS-FUSE</a> project as well.</p>
+<h2>ZFS organizes file systems as a flexible tree</h2>
+<p>btrfs does not allow you to organize subvolumes.  Subvolumes appear where you created them (whether through creation or snapshotting), and you can't move or rename them.  That's it.</p>
+<p>ZFS organizes file systems within a pool as a flexible tree.  Of course -- just like with btrfs -- when you create a file system, the file system you created is always a child file system of another file system.  But you can rename and move them around freely, and you can reconfigure how they attach to your VFS anywhere, <em>including</em> points outside of the mount point where the pool was attached originally.  Also, snapshots do not attach themselves to the VFS automatically.</p>
+<p>What do these facts allow you to do?</p>
+<ul>
+<li>You can organize your ZFS file systems in a tree, separate from snapshots themselves.  This comes more naturally because the VFS is already a tree.  You can't do that with btrfs.</li>
+<li>You can mount a ZFS file system without mounting its children.  What's more, mounting a ZFS file system <em>with</em> its children, whether they are file systems or snapshots, <em>doesn't force you to see the children mounted underneath</em> -- you can have the children be mounted somewhere else.  With ZFS, <em>you</em> choose where a file system is attached to the VFS tree; the initial mount point of the file system does not bind your wishes in any way.</li>
+<li>You can apply operations to an entire tree of file systems at once.  You have to apply those operations separately to each btrfs subvolume.</li>
+<li>You can set policy for an entire subtree of file systems at once.  You have to manually set policy for each btrfs subvolume.</li>
+<li>You can manage usage of disk space hierarchically.  You can't even view per-subvolume disk space usage on btrfs.</li>
+<li>You can view the entire tree of all active pools on your system with a single command.  With btrfs, you have to first discover which btrfs file systems are mounted, and then use one command per tree, which may not show you the entire tree (e.g. if you have mounted a subvolume rather than the root subvolume).</li>
+</ul>
+<p>At first glance, these may sound like whining about "the way btrfs does things".  But all we have to do to understand they really are not, is ask ourselves: hy are these ZFS affordances important?</p>
+<p>Because they allow you to discover, manage and tune data storage and organization with very little effort.  Sure, if you have two subvolumes vs. two ZFS file systems, it's not that important to have them organized in a tree, but if you have two hundred, then suddenly the ability to operate on whole swaths of file systems becomes vital.  And there are very good reasons you might want to have lots of file systems:</p>
+<ul>
+<li>Separating data according to security policies.</li>
+<li>Giving different quotas depending on the directory.</li>
+<li>Segregating data according to policy, churn, backup lifecycle, et cetera.</li>
+<li>Giving each user his own home directory.</li>
+</ul>
+<p>These are all things you <em>might</em> want to do, but you'd have to ponder whether it is worth doing given the added effort to do them.  ZFS makes it <em>effortless</em> to use these features, without adding any additional work for you.  Thus, ZFS makes it <em>possible</em> to do what you want, whereas before with btrfs you would have said "naaah, that's too much work for very little benefit".  In this sense, ZFS offers advantages that make btrfs look as cumbersome as LVM in some scenarios.</p>
+<h2>File system operations in ZFS can apply recursively</h2>
+<p>Want to snapshot a ZFS file system and all its children together?  It's one command.  You can snapshot fifty or five thousand file systems this way.  Not possible with btrfs -- the snapshot operation applies exclusively to the file system you snapshotted.  If you have / and /var is a subvolume of <kbd>/</kbd>, snapshotting of <kbd>/</kbd> does not snapshot <kbd>/var</kbd> with it.</p>
+<p>Want to relocate a subtree of twenty file systems into a new mountpoint?  Again, one command changing one property accomplishes it.   Not possible with btrfs.</p>
+<p>Want to backup a specific subtree or mirror it to another machine?  No problem.  Again, one command.</p>
+<p>You can't do any of these things with btrfs.  Which means you will think twice about creating many btrfs subvolumes.  Which means you won't benefit from the advantages of btrfs subvolumes as much.</p>
+<h2>Policy set on ZFS file systems is inherited by their children</h2>
+<p>One powerful feature of ZFS file systems is that any property set on it -- including the mount point -- will inherit to its children by default.</p>
+<p>Say you want compression on all your file systems but a specific one.   No problem -- enable it on the root and disable it on the one you don't want to compress data.  You can even set different compression algorithms, and the policy will inherit properly.  You can't do any of that with btrfs.</p>
+<p>You want to relocate a specific subtree of file systems somewhere else?  No problem -- change the mountpoint property on the parent of all those file systems, and ZFS will remount the parent in the new location, and all its children inside the new location too.</p>
+<h2>ZFS auto-mounts file systems by default</h2>
+<p>btrfs does not automatically mount file systems.  For each subvolume you create, you have to register it in the <kbd>fstab</kbd> so it is mounted on boot, unless it's a direct child of a mounted subvolume -- in which case <em>you can't change its mount point!</em></p>
+<p>This is not needed with ZFS.  ZFS automatically mounts each file system based on the mountpoint property assigned to it.  Since the mountpoint property is inherited too (but overridable), all child file systems are mounted at the right place as well.</p>
+<p>This means you can forget about having to change <kbd>fstab</kbd> with ZFS, if you so choose.  Creating a file system?  No problem, ZFS will mount it in the right place.  Destroying a file system or a whole subtree?  No problem, ZFS will unmount them for you.  Relocating a file system subtree to another graft point in your VFS?  Easy peasy -- change one property in one file system and you're good to go.  At no point will you be required to change <kbd>fstab</kbd> or issue many mount and umount commands.</p>
+<p>Of course, you can override that.  You can relocate specific portions of your ZFS tree of file systems to a different mountpoint.  Simply adjust the mountpoint property on the file system you want to move, and ZFS will unmount it and remount it in the new destination directory.  If the file system has any children, they will also be unmounted and remounted as subdirectories of the new location.</p>
+<p>Heck, with the built-in dracut and systemd support in ZFS (<a href="https://github.com/Rudd-O/zfs">my tree contains it</a>), you can even boot your operating system on a ZFS file system root, and you won't have to register any file system (except perhaps for the root one) in <kbd>fstab</kbd>.  Using my tree, systemd will automatically take care of discovering all pools and mounting all file systems on boot, in the <em>correct</em> order (even if you have other file systems in fstab) and in parallel.  And yes, root file system on ZFS <em>works fine</em>.  You can kiss maintenance of <kbd>fstab</kbd> goodbye.  <a href="http://rudd-o.com/linux-and-free-software/installing-fedora-on-top-of-zfs">I have written a guide to do exactly this</a>.</p>
+<p>And, if you don't like this, you can even tell ZFS that certain file systems are legacy and should not be mounted automatically, then use <kbd>fstab</kbd> for them.</p>
+<p>Not having the auto-mount feature or inheritable mountpoint properties in btrfs, again, means that managing many subvolumes is cumbersome at best.  Which means you won't take advantage of subvolumes in practice.</p>
+<h2>ZFS tracks used space per file system</h2>
+<p>btrfs cannot show you how much disk space is being referred to by each subvolume, as its used and free space tracking is only per pool.  The only way to see how much space a particular subvolume is taking is to use <kbd>du</kbd>, which gets slower the bigger the subvolume gets.</p>
+<p>ZFS can, and it will do so instantaneously, regardless of the size or amount of your filesystems.  The command <kbd>zfs list</kbd> will show you how much disk space is being referred to by each dataset, by its snapshots, and by all child snapshots of the dataset.</p>
+<p>This is good because you can designate different areas or categories, mounted at different points of the VFS structure, and then rapidly see which ones are taking the most space and how intensive is the "churn" (change in time), simply by visually comparing the used space with the used space of previous snapshots of your datasets.  Want to know how much space your <kbd>/var</kbd> is taking?  As long as you created it as a ZFS file system, no problem -- it will be instantaneous.  Want to know how much its data has changed since the last snapshot?  <kbd>zfs list</kbd> will tell you that.</p>
+<p>Suppose you have:</p>
+<pre>
+pool/shared
+pool/shared/Movies
+pool/shared/Music
+pool/shared/TV shows</pre>
+<p>A single <kbd>zfs list</kbd> command will let you know, instantaneously:</p>
+<ul>
+<li>How much disk space you have free</li>
+<li>How much disk space Movies, Music and TV shows take</li>
+<li>How much disk space the whole of <kbd>pool/shared</kbd> takes</li>
+<li>How much disk space is being used exclusively by<kbd> pool/shared</kbd> but not by any of its children</li>
+<li>How much disk space the snapshots of each one of those file systems are taking</li>
+</ul>
+<p>In a very easy to read list.</p>
+<p>This is made possible because of the "virtual memory-like" DMU abstraction layer in ZFS.</p>
+<p>Oh, I almost forgot: <kbd>df</kbd> actually does work properly with ZFS file systems.</p>
+<h2>ZFS distinguishes snapshots from file systems</h2>
+<p>btrfs pollutes the file system namespace by keeping snapshots and file systems in the same location.  A snapshot appears as a "copy-on-write" (and writable!) directory which is a sibling of the directory containing the subvolume you just snapshotted.  What happens if you don't like that, or you would like the snapshot to be invisible to users?  What happens is that you're screwed -- you can't prevent that from happening.  Cue ten <kbd>/home</kbd> directories!</p>
+<p>In contrast, ZFS intelligently separates snapshots from file systems, which makes it possible for ZFS not to list them by default, or to list them separately from file systems.  The name of the snapshot is distinct and separate from the name of the file system that was snapshotted.  ZFS also doesn't auto-mount snapshots or allow modifications to it, unless you request otherwise.  To get the snapshot to be writable (which you presumably might want in certain circumstances), you have to explicitly clone it into the file system namespace.</p>
+<p>This lack of clutter makes ZFS more efficacious for you to manage large numbers of snapshots with large numbers of file systems, and less likely for you to touch data you snapshotted for backup purposes.</p>
+<h2>ZFS lets you specify compression and other properties per file system subtree</h2>
+<p>btrfs only lets you specify compression for the whole pool, or for individual files, or for specific file systems (and only as a mount option).  ZFS lets you specify compression as an intrinsic property of a file system.  Of course, coupled with property inheritance, this means you can compress a whole subtree, or compress the entire pool <em>but for</em> a specific subtree, with one or two commands.</p>
+<p>Same goes for every other file system tuning option, like the block size for I/O or mount options like <kbd>noatime</kbd>.</p>
+<h2>ZFS is more stable</h2>
+<p>ZFS has simply had orders of magnitude more testing.  It was written as a user-space program to begin with, and it's runnable for testing purposes as a user-space program, which means that fast automated testing was there from day one.</p>
+<h2>ZFS has RAIDZ</h2>
+<p>btrfs has nothing equivalent to RAID5.  You can only do RAID10, RAID1 and RAID0.  ZFS has them all plus a RAID5 implementation called RAIDZ that is invulnerable to the write hole problem (which will make you lose your entire array under certain circumstances).</p>
+<h2>ZFS has send and receive</h2>
+<p>ZFS lets you mirror an entire pool or subtrees of that pool by incrementally transferring changed data between snapshots.  btrfs does not have that yet, though it's in the works.  It remains to be seen if btrfs's implementation of send and receive will be as easy to use as ZFS's implementation is -- judging from current facts, it is unlikely.</p>
+<h2>ZFS is better documented</h2>
+<p>There is a wealth of documentation on ZFS.  Its man pages are impeccable and explain very well what ZFS is, the core concepts, how they relate with each other, and details on the behavior of each command.  The documentation is written in such a way that you don't have to piece facts together to get a comprehensive view of the whole subsystem, and you won't have as many doubts as to the effect of each action you take.</p>
+<h2>ZFS uses atomic writes and barriers</h2>
+<p>Every write in ZFS is an atomic transaction, because ZFS makes use of barriers to complete transactions.  This prevents reordering of writes that might cause inconsistencies due to incomplete writes.  This also makes it unnecessary to disable the disk write cache, an operation that would reduce your disk subsystem write performance substantially.</p>
+<p>You can yank the power cord of your machine -- you will never lose a single byte of anything committed to the disk.  ZFS is always consistent on disk, and never trusts any faulty data (that might have become damaged because of hardware issues).  This is why people say ZFS requires no fsck to check for consistency, and faulty data never causes kernel panics.</p>
+<p>We do not yet know with certainity if that is the case with btrfs, but -- unlike with ZFS -- we do know of many btrfs pools that have gone bad, and of btrfs inconsistencies that have caused kernel panics.</p>
+<h2>ZFS will actually tell you what went bad in no uncertain terms, and help you fix it</h2>
+<p>ZFS includes an administrative function in <kbd>zpool status</kbd>, that will let you check the status of your pool and its component devices.</p>
+<p>This command will list any damage that your pool has sustained, the type of damage (read, write or checksum error), and which device suffered the damage.  In addition to that, ZFS will tell you if you actually <em>lost</em> any data due to the damage, and which files were lost.  If no data was lost as a consequence of the damage, because ZFS managed to repair the damage, ZFS will tell you "everything is okay, I have repaired the data, but this device is still faulty".</p>
+<p>The same command will also tell you which devices are online, offline, faulted, and spares for your pool.  If any device is offline or faulted, ZFS will explain why (because of absence of the device, deadlock, or too many errors detected from the device).</p>
+<p>Finally, ZFS will give you helpful hints right there in the command line, informing you of the best course of action and linking you to an extended explanation of what happened.</p>
+<p>btrfs has nothing of the sort.  You are forced to stalk the kernel ring buffer if you want to find out about such things.</p>
+<h2>ZFS increases random read performance with advanced memory and disk caches</h2>
+<p>Unlike btrfs, which is limited to the system's cache, ZFS will take advantage of fast SSDs or other fast memory technology devices, as a second level cache (L2ARC).  This cache is very effective because it is geared toward serving random reads at very high performance (so large streaming reads won't evict or trash other hot objects in the cache).</p>
+<p>The L2ARC also cooperates with the very effective ARC (adaptive replacement cache) in main memory, to prevent unnecessary data duplication and to keep the hottest data in the fastest location.  Finally, the L2ARC won't destroy your cache device with unlimited writes -- write speeds to the L2ARC are judiciously limited so the memory cells in your cache device won't sustain inordinate wear.</p>
+<p>btrfs has nothing even remotely close to this.  You want to cache a large working set being consumed by random reads, but you don't have a machine that will accept 256 GB RAM?  Sorry, you're out of luck.</p>
+<h2>ZFS increases random and synchronous write performance with log devices</h2>
+<p>ZFS has the ability to designate a fast SSD as a SLOG device.  This SLOG device lets clients complete synchronous writes instantaneously and return to the clients immediately, without bogging down the main disks (which would be slow under any copy-on-write file system because of random seeks).  After a short period, the transactions committed to the SLOG device are committed to the rotating disks in streaming fashion.  The SLOG device is, effectively, a very effective mechanism to commit a huge volume of small synchronous transactions, which would destroy IOPS performance, in a sequentialized fashion.</p>
+<p>btrfs?  Nothing like that there, move along.</p>
+<h2>ZFS supports thin-provisioned virtual block devices</h2>
+<p>Virtualizing a large number of machines?  Testing other file systems?  Consolidating many machines in a single storage unit?</p>
+<p>No problem.  ZFS (in its ZFS on Linux incarnation) lets you allocate block devices called ZVOLs backed by portions of your pool.  ZVOLs are thin-provisioned, so you can create any number of them, and create any kind of file systems on top of them.  TRIM commands from clients using those volumes release unused space on the ZVOLs back to the pool, so you can continue enjoying the advantages of thin provisioning.  What's even better, ZFS will let you share ZVOLs using iSCSI, no extra configuration or mucking around with configuration files required.</p>
+<p>Of course, <em>all</em> of the benefits of ZFS (including deduplication, snapshotting, and incremental send/receive) are available to be used with ZVOLs.  A client of a ZVOL writes a sector -- whether iSCSI, or a VM, or a local file system created on top of the volume -- and that sector will get compressed, deduplicated, and backed up using your established snapshot and send / receive policy.</p>
+<p>To even come close to this kind of thing on btrfs, you would have to create big-ass qcow or other block storage backing files, then turn them into block devices using iSCSI or other technologies like qemu.  Which means that every disk read or write incurs an extra 2 context switches.  And don't forget the editing of configuration files...</p>
+<h2>ZFS helps you share</h2>
+<p>Sharing data?</p>
+<p>No matter the mechanism, ZFS will help you there.  ZFS will share, upon your request, file systems over CIFS (SAMBA), NFS or iSCSI without any special kind of configuration:</p>
+<pre>
+zfs set sharesmb=on pool/shared/Movies
+zfs set sharenfs=on pool/shared/Movies
+zfs set shareiscsi=on pool/virtualmachines/fedorarootfilesystem</pre>
+<p>btrfs can't do that.  You must manually alter daemon configuration and reload services if you want to share something.  ZFS does it automatically for you.</p>
+<p>Don't be a misanthrope.  Share!</p>
+<h2>ZFS can save you terabytes by deduplicating your data</h2>
+<p>Yes, it's memory-hungry, and yes, it can reduce your write performance a bit.  But at least you <em>can</em> use it.</p>
+<p>btrfs?  Nope.</p>
+<hr />
+<p>Some of this information was culled from the <a href="https://github.com/gentoofan/zfs-overlay/wiki/FAQ">ZFS Gentoo overlay FAQ</a>.  Many thanks to Richard Yao.</p>
+</div>
+
+
+          </div>
+          <div id="viewlet-below-content-body">
+
+
+
+    <div class="visualClear"><!-- --></div>
+
+    <div class="documentActions">
+        
+
+        
+
+    </div>
+
+</div>
+
+          
+        </article>
+        </div>
+      </div>
+      <footer class="row">
+        <div class="col-xs-12 col-sm-12">
+          <div id="viewlet-below-content"><nav id="category" class="documentByLine" role="navigation">
+  <span id="categories-filed-under">Filed under:</span>
+  <ul aria-labelledby="categories-filed-under">
+    <li>
+      <a href="https://rudd-o.com/@@search?Subject%3Alist=ZFS" class="link-category" rel="nofollow">ZFS</a>
+    </li>
+    <li>
+      <a href="https://rudd-o.com/@@search?Subject%3Alist=btrfs" class="link-category" rel="nofollow">btrfs</a>
+    </li>
+  </ul>
+</nav>
+
+
+
+
+
+</div>
+        </div>
+      </footer>
+    </div>
+  
+          <div id="column1-container">
+          </div>
+          <div id="column2-container">
+          </div>
+        </main><!--/row-->
+      </div><!--/container-->
+    </div><!--/outer-wrapper --><footer id="portal-footer-wrapper">
+        <div class="container" id="portal-footer">
+      <div class="row">
+	<div class="col-xs-12">
+		
+<div class="portletWrapper" id="portletwrapper-706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f527564642d4f2e636f6d0a616374696f6e73" data-portlethash="706c6f6e652e666f6f746572706f72746c6574730a636f6e746578740a2f527564642d4f2e636f6d0a616374696f6e73">
+
+<aside class="portlet portletActions">
+
+  
+  <div class="portletContent">
+    <ul class="actions-site_actions">
+      
+        <li class="portletItem">
+          <a href="https://t.me/RuddO_com">
+
+            <span>Telegram</span>
+
+            
+
+          </a>
+        </li>
+      
+        <li class="portletItem">
+          <a href="https://rudd-o.com/everything/RSS">
+
+            <span>Subscribe</span>
+
+            
+
+          </a>
+        </li>
+      
+        <li class="portletItem">
+          <a href="https://rudd-o.com/sitemap">
+
+            <span>Site Map</span>
+
+            
+
+          </a>
+        </li>
+      
+        <li class="portletItem">
+          <a href="https://rudd-o.com/accessibility-info">
+
+            <span>Accessibility</span>
+
+            
+
+          </a>
+        </li>
+      
+        <li class="portletItem">
+          <a href="https://rudd-o.com/contact-info">
+
+            <span>Contact</span>
+
+            
+
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+</aside>
+
+</div>
+
+
+	</div>
+</div>
+
+<div id="plone-analytics"><script type="text/javascript">  var _gaq = _gaq || [];  _gaq.push(['_setAccount', 'UA-1203268-1']);  _gaq.push(['_setDomainName', 'rudd-o.com']);  _gaq.push(['_trackPageview']);  (function() {    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);  });</script></div>
+
+    </div>
+      </footer></body>
+</html>

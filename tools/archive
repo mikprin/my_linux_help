@@ -1,0 +1,12 @@
+There are two main tools. lbzip2 and pbzip2. They're essentially different implementations of bzip2 compressors. I've compared them (the output is a tidied up version but you should be able to run the commands)
+
+cd /dev/shm  # we do all of this in RAM!
+dd if=/dev/urandom of=bigfile bs=1024 count=102400
+
+$ lbzip2 -zk bigfile
+Time: 0m3.596s
+Size: 105335428 
+
+$ pbzip2 -zk bigfile
+Time: 0m5.738s6
+Size: 10532460
