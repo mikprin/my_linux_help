@@ -1,0 +1,4 @@
+# Make install:
+sudo apt-get install xclip
+# Make alias
+alias copy='xclip -selection clipboard'
